@@ -1,7 +1,7 @@
 resource "aws_instance" "tf-ec1" {
- ami = "ami-05fa00d4c63e32376"
+ ami = "ami-09988af04120b3591"
  instance_type = "t2.micro"
- key_name = "tests"
+ key_name = "Devops"
  vpc_security_group_ids = ["${aws_security_group.tf-sg.id}"]
  subnet_id = "${aws_subnet.tf-pub-sn-1.id}"
  associate_public_ip_address = true
@@ -12,9 +12,9 @@ tags = {
 }
 
 resource "aws_instance" "tf-ec2" {
- ami = "ami-05fa00d4c63e32376"
+ ami = "ami-09988af04120b3591"
  instance_type = "t2.micro"
- key_name = "tests"
+ key_name = "Devops"
  vpc_security_group_ids = ["${aws_security_group.tf-sg.id}"]
  subnet_id = "${aws_subnet.tf-pub-sn-1.id}"
  associate_public_ip_address = true
